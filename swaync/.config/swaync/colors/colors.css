@@ -1,0 +1,14 @@
+/* Paleta de colores globales */
+
+@define-color text #d3c6c2;                  /* Texto principal */
+@define-color text-alt #a68671;              /* Texto secundario o de menor importancia */
+@define-color background #13161a;            /* Fondo principal de los elementos */
+@define-color background-alt #13161a;        /* Fondo alternativo (entradas de texto, interruptores) */
+@define-color hover #45475a;                 /* Color al pasar el cursor (botones, elementos interactivos) */
+@define-color selected #a68671;              /* Estado seleccionado o activo */
+
+/* Colores específicos de notificaciones y centro de control */
+@define-color notification-bg #13161a;       /* Fondo de las notificaciones flotantes */
+@define-color center-bg #13161a;             /* Fondo del contenedor principal del Centro de Control */
+@define-color center-notification-bg #13161a;/* Fondo de las notificaciones dentro del centro de control */
+@define-color urgent #f38ba8;                 /* Color para alertas críticas (bordes de notificaciones urgentes) */

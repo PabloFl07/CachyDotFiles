@@ -1,0 +1,43 @@
+SISTEMA Y TERMINAL
+SUPER + Return          : Abrir terminal (Kitty)
+SUPER + SHIFT + Return  : Abrir scratchpad
+SUPER + Q               : Cerrar ventana activa
+SUPER + M               : Apagar sistema / Salir de Hyprland
+SUPER + R               : Recargar Waybar
+SUPER + N               : Apagar pantalla
+SUPER + B               : Bloquear pantalla (Hyprlock)
+KITTY
+CTRL + SHIFT + ENTER    : Split Terminal
+CTRL + SHIFT + T        : Nueva ventana
+CTRL + SHIFT + Arrows   : Cambiar Ventana 
+APLICACIONES
+SUPER + D               : Lanzador de aplicaciones (Rofi)
+SUPER + SHIFT + F       : Navegador web (Firefox)
+SUPER + SHIFT + W       : Gestor de archivos (Yazi)
+SUPER + SHIFT + P       : Spotify
+SUPER + SHIFT + K       : Gestor de contraseñas (KeePassXC)
+SUPER + SHIFT + V       : VSCode
+SUPER + SHIFT + S       : Captura de pantalla (Flameshot)
+UTILIDADES Y MENÚS
+SUPER + W               : Menú de acceso rápido a carpetas
+SUPER + H               : Menú de atajos
+SUPER + SHIFT + H       : Ver horario
+SUPER + Tab             : Menú de acceso rápido a webs
+WORKSPACES
+SUPER + 1-9             : Cambiar workspace 1-10
+SUPER + SHIFT + 1-9     : Mover ventana al workspace 1-10
+SUPER + S               : Alternar workspace especial
+SUPER + SHIFT + S       : Mover a workspace especial
+SUPER + Mouse 275       : Siguiente workspace
+SUPER + Mouse 276       : Workspace anterior
+VENTANAS
+SUPER + Clic Izquierdo  : Mover / Arrastrar ventana
+SUPER + Clic Derecho    : Redimensionar ventana
+SUPER + P               : Activar modo pseudo-tiling
+SUPER + O               : Alternar ventana flotante
+SUPER + SHIFT + O       : Ocultar / Mostrar Waybar
+SUPER + F               : Alternar división V/H (togglesplit)
+SUPER + Flecha Izquierda: Mover foco a la izquierda
+SUPER + Flecha Derecha  : Mover foco a la derecha
+SUPER + Flecha Arriba   : Mover foco arriba
+SUPER + Flecha Abajo    : Mover foco abajo

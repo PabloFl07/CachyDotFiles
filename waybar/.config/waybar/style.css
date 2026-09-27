@@ -1,0 +1,221 @@
+@import url('../../.cache/wal/colors-waybar.css');
+
+* {
+    font-size:15px;
+    font-family: "Hurmit Nerd Font Propo";
+}
+window#waybar{
+    all:unset;
+}
+.modules-left {
+    padding:7px;
+    margin:10 0 5 10;
+    border-radius:10px;
+    background: alpha(#13161a,.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-center {
+    padding:7px;
+    margin:10 0 5 0;
+    border-radius:10px;
+    background: alpha(#13161a,.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-right {
+    padding:7px;
+    margin: 10 10 5 0;
+    border-radius:10px;
+    background: alpha(#13161a,.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+tooltip {
+    background:#13161a;
+    color: #a68671;
+}
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:#62524F;
+}
+#custom-notification {
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:#a68671;
+}
+#clock{
+    padding: 0px 5px;
+    color:#d3c6c2;
+    transition: all .3s ease;
+}
+#custom-pacman{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:#cb9a87;
+
+}
+#workspaces {
+    padding: 0px 5px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(#bfa097,.4);
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: #a16b57;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: #946857;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:#d3c6c2;
+
+}
+#network{
+    padding: 0px 2px;
+    transition: all .3s ease;
+    color:#cb9a87;
+    margin: 0px 0px 0px 0px;
+
+}
+#battery{
+    padding: 0px 0px;
+    transition: all .3s ease;
+    color:#d3c6c2;
+    margin: 0px 10px 0px 0px;
+
+}
+#battery.charging {
+    color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#group-expand{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+#custom-expand{
+    padding: 0px 5px;
+    color:#cb9a87;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#custom-colorpicker{
+    padding: 0px 5px;
+}
+#cpu,#memory,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color: #cb9a87;
+}
+#custom-endpoint{
+    color: #cb9a87;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+
+}
+#tray{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+
+}
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+#custom-cava_media {
+    background-color: transparent; /* <-- Limpia el fondo por defecto */
+    border-radius: 0px;
+    padding: 0px 3px;
+    color: #cb9a87; 
+    margin: 3px 5px 5px 5px;
+}
+
+#mpris {
+    background-color: transparent; /* <-- Limpia el fondo por defecto */
+    border-radius: 0px;
+    padding: 0 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+
+#mpris.playing {
+    color: #be8774; /* Se vuelve cobrizo cuando la música está sonando */
+}
+
+#mpris.paused {
+    color: #62524F; /* Un tono gris verdoso más apagado al pausar */
+}
+
+
+/* Estilo para todo el contenedor del menú de apagado */
+#group-powermenu {
+    border-radius: 0px;
+    padding: 0 3px;
+    margin-left: 3px;
+}
+
+/* Color base para los botones internos */
+#custom-power, #custom-reboot, #custom-logout, #custom-lock {
+    padding: 0 3px;
+}
+
+/* El botón principal de apagado en cobrizo brillante */
+#custom-power {
+    color: #be8774; 
+}
+#custom-reboot, #custom-logout, #custom-lock {
+    color:#d3c6c2;
+}
+/* Efecto hover para cuando pases el cursor sobre las opciones de dentro */
+#custom-reboot:hover, #custom-logout:hover, #custom-lock:hover {
+    color: #d59d8e;
+}
+
+#custom-apps {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color: #cb9a87;
+}
