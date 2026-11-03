@@ -92,10 +92,18 @@ hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 
 -- WORKSPACES
-for i = 1, 10 do
+for i = 1, 5 do
     local key = i % 10 -- 10 maps to key 0
     hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+end
+
+local numpad = { 87, 88, 89, 83, 84 } -- KP_1, KP_2, KP_3, KP_4, KP_5
+
+for i, code in ipairs(numpad) do
+    local ws = i + 5
+    hl.bind(mainMod .. " + code:" .. code,             hl.dsp.focus({ workspace = ws }))
+    hl.bind(mainMod .. " + SHIFT + code:" .. code,     hl.dsp.window.move({ workspace = ws }))
 end
 
 -- AUDIO / BRIGHTNESS 
